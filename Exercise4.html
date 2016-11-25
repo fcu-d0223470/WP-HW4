@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button:first").click(function(){
+	$("p").eq(0).hide();
+	});
+	$("#button2").click(function(){
+	$("p").eq(1).hide();
+	});
+	$(".button3").click(function(){
+	$("p").eq(2).hide();
+	});
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+<p>Hide paragraph 1.(index 0).</p>
+<p>Hide paragraph 2. (index 1).</p>
+<p>Hide paragraph 3. (index 2).</p>
+
+<button>Click me 1</button>
+<button id="button2">Click me 2</button>
+<button class="button3">Click me 3</button>
+</body>
+</html>
